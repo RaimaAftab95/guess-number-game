@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- google font family -->
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <!-- link custom css -->
+    <link href="style3.css" rel="stylesheet">
+    <title>Guess Number Game</title>
+</head>
+<body>
+    <div class="container" id="game-container">
+        <h1 class="text-center">Guess My Number</h1>
+        <hr   class="border-5">
+        <div  class="d-flex justify-content-center align-items-center">
+        <button id="randomNumber" class="matchNumber btn fs-5 fw-bold shadow-none rounded-0 bg-transparent border-white text-white border-2">?</button>
+    </div>
+        <br>
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="align-content-center">
+                <label for="numberRange" class="form-label">Select a number</label>
+                <div class="col-md-12 col-lg-12">
+                    <!-- we can also use class="input-group" to bring input field and button in one line
+                     -->
+                     <!-- btn-outline-dark -->
+                    <div  class="d-flex align-items-center">
+                        <input type="number" id="inputNumber" class=" btn  form-control me-3 guess rounded-0 bg-transparent border-white text-white border-2  fs-5 fw-bold" min="1" max="20">
+                        <button id="check"  class="fs-5 fw-bold btn rounded-0 bg-transparent border-white text-white border-2" onclick="check()">Check</button>
+                    </div>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-12">
+                <!-- smiling face -->
+               <p id="displayMessage" class="displaymessage">&#x1F604; Start guessing.........</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+               <!-- 100 -->
+               <p  id="Highscore">&#x1F4AF; Highscore is:<span class="highscore">0</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div  class="col-12">
+               <!-- win medal -->
+               <p  id="score">&#x1F947; score is :<span class="score">20</span></p>
+              <br>
+               <button class="btn fs-5 fw-bold shadow-none rounded-0 bg-transparent border-white text-white border-2" onclick="again()">Play Again</button>
+            </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script  src="script.js"></script>
+</body>
+</html>
