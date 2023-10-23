@@ -10,7 +10,8 @@ body{
 }
 .container
 {
-    width: 420px;
+    width: 90%; 
+    max-width: 420px;
     background: transparent;
     color: white;
     border-radius:20px ;
@@ -25,4 +26,12 @@ body{
     width: 150px!important;
     height: 50px!important ;
     align-items: center;
+}
+
+@media (max-width: 768px)
+ {
+    .container {
+        width: 90%; /* Adjust for smaller screens */
+        max-width: none; /* Remove the maximum width */
+    }
 }
